@@ -3,7 +3,7 @@ import { SetContext3 } from './ThemeContext';
 
 export default function B4() {
     const theme = useContext(SetContext3);
-    const [backgroundColor, setBackgroundColor] = useState(theme);
+    const [backgroundColor, setBackgroundColor] = useState<string>(theme);
     
     const toggleColor = () => {
         setBackgroundColor( backgroundColor === 'blue' ? 'red' : 'blue');
